@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springcenboomhdemo</artifactId>
+        <groupId>com.cbh.spring</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cenboomhdemo-impl</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.th.supcom</groupId>
+            <artifactId>framework-dependency-server-impl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cbh.spring</groupId>
+            <artifactId>cenboomhdemo-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--添加翻译功能-->
+        <dependency>
+            <groupId>com.th.supcom</groupId>
+            <artifactId>framework-standard-service-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.th.supcom.framework</groupId>
+            <artifactId>framework-standard-adapter-his</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

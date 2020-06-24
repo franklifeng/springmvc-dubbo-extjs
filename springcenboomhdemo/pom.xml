@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cbh.spring</groupId>
+    <artifactId>springcenboomhdemo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.th.supcom</groupId>
+        <artifactId>super-parent</artifactId>
+        <version>5.0.3</version>
+    </parent>
+
+    <properties>
+        <!-- 定义框架版本 -->
+        <framework.facade.version>5.0.49</framework.facade.version>
+    </properties>
+
+    <dependencyManagement>
+        <!-- 导入框架门面POM -->
+        <dependencies>
+            <dependency>
+                <groupId>com.th.supcom</groupId>
+                <artifactId>framework-facade-all</artifactId>
+                <version>${framework.facade.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>cenboomhdemo-api</module>
+        <module>cenboomhdemo-impl</module>
+        <module>cenboomhdemo-portal</module>
+        <module>cenboomhdemo-server</module>
+        <module>cenboomhdemo-webui</module>
+    </modules>
+
+
+</project>
